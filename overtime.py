@@ -6,7 +6,7 @@ from optparse import OptionParser
 parser = OptionParser()
 parser.add_option("-p","--password", dest="password")
 parser.add_option('-l',"--login", dest="login", default=None)
-parser.add_option("--to", dest="to", default='allan@chefe.com.br,mayara@chefe.com.br')
+parser.add_option("--to", dest="to", default='chefe@empresa.com,gerente@empresa.com')
 parser.add_option("--smtp", dest="smtp", default="mail.vivapixel.com.br")
 parser.add_option("--port", dest="port", default="25")
 parser.add_option("-t","--time", dest="time", default=18)
@@ -47,9 +47,9 @@ print('Desligando...')
 
 plataform = sys.platform
 if 'linux' in plataform:
-    os.system('sudo shutdown -h now')
+    os.system('sudo shutdown -h now "Até amanhã"')
 elif 'windows':
-    os.system('shutdown -s -t 0')
+    os.system('shutdown -s -t 3 -c "Até amanhã"')
 
 print('Bye...')
 exit(0)

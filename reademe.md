@@ -15,4 +15,3 @@ Unless required by applicable law or agreed to in writing, software distributed 
 ##platforms
 - Windows (XP ou superior)
 - Ubuntu (12.04 ou superior)
-
